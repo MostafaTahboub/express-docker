@@ -6,7 +6,8 @@
   "main": "main.ts",
   "scripts": {
     "start": "tsc && node ./dist/main.js",
-    "dev": "nodemon --exec 'node --no-warnings --loader ts-node/esm ./main.ts'",
+    "watch": "node --no-warnings --loader ts-node/esm ./main.ts",
+    "dev": "nodemon --exec npm run watch",
     "build": "tsc --project .",
     "test": "jest"
   },
