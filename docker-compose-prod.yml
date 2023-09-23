@@ -16,7 +16,7 @@ services:
       retries: 10
     restart: always
   app:
-    image: ghcr.io/mostafatahboub/express-docker:62d482a
+    image: ghcr.io/mostafatahboub/express-docker:$GIT_VERSION
     restart: always 
     environment:
       - PORT=80
